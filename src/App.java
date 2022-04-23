@@ -1,3 +1,5 @@
+import jdk.swing.interop.SwingInterOpUtils;
+
 public class App {
 
     public static void main(String[] args) {
@@ -19,5 +21,11 @@ public class App {
         byte myByte = 120;
         Byte myByteRef = 120;
         System.out.println("Hello world");
+
+        System.out.println(ObjectOrientedLanguages.JAVA);
+
+        for (ObjectOrientedLanguages oop : ObjectOrientedLanguages.values()){
+            System.out.println(oop);
+        }
     }
 }
